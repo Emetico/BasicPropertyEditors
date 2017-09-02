@@ -1,0 +1,148 @@
+@mixin Classes() {
+    $green: #5cc25a;
+    $red: #df3b3a;
+    $blue: #36b4f6;
+
+    &.green-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.red-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
+    &.blue-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+    &.green-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.green-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.red-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
+    &.red-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
+    &.blue-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+    &.blue-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+}
+
+.uiSlideSwitch {
+    .switch {           
+        position: relative;
+        display: inline-block;
+        box-sizing: content-box;
+        overflow: visible;
+        width: 80px;
+        height: 30px;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+        transition: 0.3s ease-out all;
+        -webkit-transition: 0.3s ease-out all;
+        top: -1px;
+        &.checked {
+            small {
+                left: 50px;
+            }
+            .switch-text {
+                .off {
+                  display: none;
+                }
+                .on {
+                  display: block;
+                }
+            }
+        }
+        &.disabled {
+            opacity: .50;
+            cursor: not-allowed;
+        }
+        @include Classes();    
+        small {
+          background: #fff;
+          border-radius: 100%;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          z-index: 1;
+          transition: 0.3s ease-out all;
+          -webkit-transition: 0.3s ease-out all;
+        }
+        .switch-text {
+          font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
+          font-size: 15px;
+            .off {
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 6px;
+                z-index: 0;
+                color: #ffffff;
+            }
+            .on {
+                display:none;
+                z-index: 0;
+                color: #ffffff;
+                position: absolute;
+                top: 6px;
+                left: 10px;
+            }
+        }
+    }
+}

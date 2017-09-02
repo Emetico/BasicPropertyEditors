@@ -1,0 +1,58 @@
+﻿{
+    propertyEditors:[
+	{
+      "alias": "BasicPropertyEditors.switch",
+      "name": "Slide Switch",
+      "isParameterEditor": true,
+      "group": "Basic Property Extensions",
+      "icon": "icon-trafic color-green",
+      "editor": {
+        "view": "~/App_Plugins/BasicPropertyEditors/PropertyEditors/SlideSwitch/SlideSwitch.html"
+      },
+      "prevalues": {
+        "fields": [
+			{
+				label: "Default value",
+				description: "Set the default value at install.",
+				key: "defaultValue",
+				view: "boolean"
+			},
+			{
+				"label": "True color",
+				"description": "Set the color, when the checkbox is selected.",
+				"key": "trueColor",
+				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
+			},
+			{
+				"label": "True text",
+				"description": "Set the text, when the checkbox is selected.",
+				"key": "trueText",
+				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
+			},
+			{
+				"label": "False color",
+				"description": "Set the color, when the checkbox is not selected.",
+				"key": "falseColor",
+				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
+			},
+			{
+				"label": "False text",
+				"description": "Set the Text, when the checkbox is not selected.",
+				"key": "falseText",
+				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
+			}
+        ]
+      }
+    }
+	],
+	gridEditors:[],
+	javascript:[
+		"~/App_Plugins/BasicPropertyEditors/Directives/UiSlideSwitch/UiSlideSwitch.js",
+		"~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.js",
+		"~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.js",
+		"~/App_Plugins/BasicPropertyEditors/PropertyEditors/SlideSwitch/SlideSwitch.js"
+	],
+	css:[
+		"~/App_Plugins/BasicPropertyEditors/Directives/UiSlideSwitch/UiSlideSwitch.min.css"
+	]
+}

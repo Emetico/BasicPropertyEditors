@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<language alias="da" intName="Danish" localName="dansk" lcid="" culture="da-DK">
+  <area alias="general">
+    <key alias="on">Til</key>
+    <key alias="off">Fra</key>
+  </area>
+  <area alias="color">
+    <key alias="red">Rød</key>
+    <key alias="green">Grøn</key>
+    <key alias="blue">Blå</key>
+  </area>
+</language>
