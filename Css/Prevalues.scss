@@ -1,0 +1,12 @@
+@import "mixins";
+
+.uiPrevalues {
+    select {
+        outline: none;
+        background-color: #ffffff;
+        border-color: #cccccc;
+        color: #333333;
+        font-size: 15px;
+        font-family: $font-family;     
+    }
+}

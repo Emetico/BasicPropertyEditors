@@ -1,4 +1,4 @@
-﻿angular.module("umbraco").controller("Basic.Property.Editors.Prevalues.SlideSwitchColorController", function ($scope, localizationService) {
+﻿angular.module("umbraco").controller("Basic.Property.Editors.Prevalues.ColorController", function ($scope, localizationService) {
 
     $scope.color = {
         green: "",
@@ -16,17 +16,16 @@
         $scope.color.blue = value;
     });
 
-    if ($scope.model.key == "trueColor") {
-        setDefaultValue("green");
-    }
-    else {
-        setDefaultValue("red");
-    }
-
-    function setDefaultValue(color) {
-        if ($scope.model.value === null || $scope.model.value === "") {
-            $scope.model.value = color;
+    if ($scope.model.value === null || $scope.model.value === "") {
+        if ($scope.model.alias == "trueColor") {
+            setDefaultValue("green");
+        }
+        else {
+            setDefaultValue("red");
         }
     }
 
+    function setDefaultValue(color) {
+        $scope.model.value = color;
+    }
 });

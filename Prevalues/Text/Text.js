@@ -1,4 +1,4 @@
-﻿angular.module("umbraco").controller("Basic.Property.Editors.Prevalues.SlideSwitchTextController", function ($scope, localizationService) {
+﻿angular.module("umbraco").controller("Basic.Property.Editors.Prevalues.TextController", function ($scope, localizationService) {
 
     $scope.text = {
         yes: "",
@@ -20,18 +20,16 @@
         $scope.text.off = value;
     });
 
-
-    if ($scope.model.key == "trueText") {
-        setDefaultValue("yes");
-    }
-    else {
-        setDefaultValue("no");
-    }
-
-    function setDefaultValue(text) {
-        if ($scope.model.value === null || $scope.model.value === "") {
-            $scope.model.value = text;
+    if ($scope.model.value === null || $scope.model.value === "") {
+        if ($scope.model.alias == "trueText") {
+            setDefaultValue("yes");
+        }
+        else {
+            setDefaultValue("no");
         }
     }
 
+    function setDefaultValue(text) {
+        $scope.model.value = text;
+    }
 });

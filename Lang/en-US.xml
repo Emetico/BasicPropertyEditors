@@ -4,6 +4,8 @@
   <area alias="general">
     <key alias="on">On</key>
     <key alias="off">Off</key>
+    <key alias="checked">Checked</key>
+    <key alias="empty">Empty</key>
   </area>
   <area alias="color">
     <key alias="red">Red</key>

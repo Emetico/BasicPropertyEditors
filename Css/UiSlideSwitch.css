@@ -19,9 +19,6 @@
     display: none; }
   .uiSlideSwitch .switch.checked .switch-text .on {
     display: block; }
-  .uiSlideSwitch .switch.disabled {
-    opacity: .50;
-    cursor: not-allowed; }
   .uiSlideSwitch .switch.green-green {
     border: 1px solid #5cc25a;
     background: #5cc25a; }
@@ -77,7 +74,7 @@
       background: #36b4f6;
       border-color: #36b4f6; }
   .uiSlideSwitch .switch small {
-    background: #fff;
+    background: #ffffff;
     border-radius: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     width: 30px;
@@ -89,7 +86,7 @@
     transition: 0.3s ease-out all;
     -webkit-transition: 0.3s ease-out all; }
   .uiSlideSwitch .switch .switch-text {
-    font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px; }
     .uiSlideSwitch .switch .switch-text .off {
       display: block;

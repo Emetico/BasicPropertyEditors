@@ -1,0 +1,56 @@
+.uiButtonSwitch button {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  display: inline-block;
+  padding: 4.5px 12px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #333333;
+  min-width: 50px;
+  float: left; }
+  .uiButtonSwitch button.true {
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px; }
+  .uiButtonSwitch button.false {
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px; }
+  .uiButtonSwitch button.checked {
+    cursor: not-allowed; }
+    .uiButtonSwitch button.checked.green {
+      border-color: #58bb56;
+      background-color: #5cc25a;
+      color: #ffffff; }
+    .uiButtonSwitch button.checked.red {
+      border-color: #d03e3d;
+      background-color: #df3b3a;
+      color: #ffffff; }
+    .uiButtonSwitch button.checked.blue {
+      border-color: #2fa6e4;
+      background-color: #36b4f6;
+      color: #ffffff; }
+
+/*# sourceMappingURL=UiButtonSwitch.css.map */

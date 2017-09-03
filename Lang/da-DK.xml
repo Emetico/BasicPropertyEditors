@@ -4,6 +4,8 @@
   <area alias="general">
     <key alias="on">Til</key>
     <key alias="off">Fra</key>
+    <key alias="checked">Valgt</key>
+    <key alias="empty">Tom</key>
   </area>
   <area alias="color">
     <key alias="red">Rød</key>

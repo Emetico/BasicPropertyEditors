@@ -1,0 +1,106 @@
+$green: #5cc25a;
+$greenBorder: #58bb56;
+$red: #df3b3a;
+$redBorder: #d03e3d;
+$blue: #36b4f6;
+$blueBorder: #2fa6e4;
+
+$font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
+
+@mixin BorderRadius($pixels, $topleft: true, $topright: true, $bottomleft: true, $bottomright: true) {
+    @if $topleft == true {
+        -webkit-border-top-left-radius: $pixels;
+        -moz-border-radius-topleft: $pixels;
+        border-top-left-radius: $pixels;
+   }
+   @if $topright == true {
+        -webkit-border-top-right-radius: $pixels;
+        -moz-border-radius-topright: $pixels;
+        border-top-right-radius: $pixels;
+   }   
+   @if $bottomleft == true {
+        -webkit-border-bottom-left-radius: $pixels;
+        -moz-border-radius-bottomleft: $pixels;
+        border-bottom-left-radius: $pixels;
+   }
+   @if $bottomright == true {
+        -webkit-border-bottom-right-radius: $pixels;
+        -moz-border-radius-bottomright: $pixels;
+        border-bottom-right-radius: $pixels;
+   }
+}
+
+@mixin FixedGroups() {
+    &.green-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.red-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
+    &.blue-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+    &.green-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.green-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.red-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
+    &.red-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
+    &.blue-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+    &.blue-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "mixins";
+
+.uiButtonSwitch {
+    button {
+        font-family: $font-family;       
+        text-transform: none;
+        display: inline-block;
+        padding: 4.5px 12px;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-appearance: button;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none;
+        border: 1px solid #cccccc;
+        background-color: #ffffff;
+        color: #333333;
+        min-width: 50px;
+        float: left;
+        &.true {
+            @include BorderRadius(10px, true, false, true, false);
+        }
+        &.false {
+            @include BorderRadius(10px, false, true, false, true);
+        }
+        &.checked {
+            cursor: not-allowed;
+            &.green {
+                border-color: $greenBorder;
+                background-color: $green;
+                color: #ffffff;
+            }
+            &.red {
+                border-color: $redBorder;
+                background-color: $red;
+                color: #ffffff;
+            }
+            &.blue {
+                border-color: $blueBorder;
+                background-color: $blue;
+                color: #ffffff;
+            }
+        }
+    }
+}
