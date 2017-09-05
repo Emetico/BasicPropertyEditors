@@ -20,8 +20,10 @@
         $scope.text.off = value;
     });
 
+    var aliasKey = "trueText";
+
     if ($scope.model.value === null || $scope.model.value === "") {
-        if ($scope.model.alias == "trueText") {
+        if ($scope.model.alias == aliasKey || $scope.model.key == aliasKey) {
             setDefaultValue("yes");
         }
         else {

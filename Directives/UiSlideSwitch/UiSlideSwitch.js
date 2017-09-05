@@ -7,15 +7,14 @@
         require: 'ngModel',
         scope: {
             ngModel: '=ngModel',
-            switchClass: '@switchClass',
             trueText: '@trueText',
-            falseText: '@falseText'
+            falseText: '@falseText',
+            trueClass: '@trueClass',
+            falseClass: '@falseClass'
         },
         priority: 1,
         link: function (scope, element, attrs, ngModelCtr) {
 
-            scope.trueText = scope.trueText;
-            scope.falseText = scope.falseText;
             scope.class = scope.switchClass;
 
             scope.$watch('ngModel', function (newVal, oldVal) {

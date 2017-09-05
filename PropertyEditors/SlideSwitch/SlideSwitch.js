@@ -1,19 +1,23 @@
 ﻿angular.module("umbraco").controller("Basic.Property.Editors.SlideSwitchController", function ($scope, localizationService) {
 
-    $scope.text = {
-        trueX: "x",
-        falseX: "x"
+    $scope.values = {
+        text: {
+            trueX: "x",
+            falseX: "x"
+        },
+        color: {
+            trueX: $scope.model.config.trueColor,
+            falseX: $scope.model.config.falseColor
+        }
     };
 
     localizationService.localize("general_" + $scope.model.config.trueText).then(function (value) {
-        $scope.text.trueX = value;
+        $scope.values.text.trueX = value;
     });
 
     localizationService.localize("general_" + $scope.model.config.falseText).then(function (value) {
-        $scope.text.falseX = value;
+        $scope.values.text.falseX = value;
     });
-
-    $scope.switchClass = $scope.model.config.trueColor + "-" + $scope.model.config.falseColor;
 
     // Gets the default checkbox value "0" or "1". Set by umbraco checkbox view.
     if ($scope.model.value === null || $scope.model.value === "") {

@@ -16,8 +16,10 @@
         $scope.color.blue = value;
     });
 
+    var aliasKey = "trueColor";
+
     if ($scope.model.value === null || $scope.model.value === "") {
-        if ($scope.model.alias == "trueColor") {
+        if ($scope.model.alias == aliasKey || $scope.model.key == aliasKey) {
             setDefaultValue("green");
         }
         else {
