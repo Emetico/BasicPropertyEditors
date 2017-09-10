@@ -15,11 +15,6 @@
         priority: 1,
         link: function (scope, element, attrs, ngModelCtr) {
 
-            scope.trueText = scope.trueText;
-            scope.falseText = scope.falseText;
-            scope.trueClass = scope.trueClass;
-            scope.falseClass = scope.falseClass;
-
             scope.$watch('ngModel', function (newVal, oldVal) {
                 // Somehow true/false get's converted to "True"/"False", when the document is saved.
                 if (newVal === "True") {

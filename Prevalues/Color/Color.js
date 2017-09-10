@@ -3,7 +3,8 @@
     $scope.color = {
         green: "",
         red: "",
-        blue: ""
+        blue: "",
+        yellow: ""
     };
 
     localizationService.localize("color_green").then(function (value) {
@@ -15,19 +16,7 @@
     localizationService.localize("color_blue").then(function (value) {
         $scope.color.blue = value;
     });
-
-    var aliasKey = "trueColor";
-
-    if ($scope.model.value === null || $scope.model.value === "") {
-        if ($scope.model.alias == aliasKey || $scope.model.key == aliasKey) {
-            setDefaultValue("green");
-        }
-        else {
-            setDefaultValue("red");
-        }
-    }
-
-    function setDefaultValue(color) {
-        $scope.model.value = color;
-    }
+    localizationService.localize("color_yellow").then(function (value) {
+        $scope.color.yellow = value;
+    });
 });

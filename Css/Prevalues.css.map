@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGI,mBAAO;EACH,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,OAAO;EACzB,YAAY,EAAE,OAAO;EACrB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,WAAW,ECFL,sDAAM",
-"sources": ["Prevalues.scss","_mixins.scss"],
-"names": [],
-"file": "Prevalues.css"
-}

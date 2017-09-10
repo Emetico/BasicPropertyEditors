@@ -1,4 +1,4 @@
-﻿angular.module("umbraco").controller("Basic.Property.Editors.SlideSwitchController", function ($scope, localizationService) {
+﻿angular.module("umbraco").controller("Basic.Property.Editors.SlideSwitchController", function ($scope, localizationService, bpeHelperService) {
 
     $scope.values = {
         text: {
@@ -20,15 +20,15 @@
     });
 
     // Gets the default checkbox value "0" or "1". Set by umbraco checkbox view.
-    if ($scope.model.value === null || $scope.model.value === "") {
+    if (bpeHelperService.isNullOrEmpty($scope.model.value)) {
         $scope.model.value = $scope.model.config.defaultValue;
     }
 
     // If umbraco transformed true/false. We set it back.
-    if ($scope.model.value === "0" || $scope.model.value === "False") {
+    if (bpeHelperService.isFalse($scope.model.value)) {
         $scope.model.value = false;
     }
-    else if ($scope.model.value === "1" || $scope.model.value === "True") {
+    else if (bpeHelperService.isTrue($scope.model.value)) {
         $scope.model.value = true;
     }
 });

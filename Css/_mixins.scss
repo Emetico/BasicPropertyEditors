@@ -4,8 +4,10 @@ $red: #df3b3a;
 $redBorder: #d03e3d;
 $blue: #36b4f6;
 $blueBorder: #2fa6e4;
+$yellow: #eaea11;
+$yellowBorder: #e4e414;
 
-$font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
+$font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 @mixin BorderRadius($pixels, $topleft: true, $topright: true, $bottomleft: true, $bottomright: true) {
     @if $topleft == true {
@@ -28,6 +30,13 @@ $font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
         -moz-border-radius-bottomright: $pixels;
         border-bottom-right-radius: $pixels;
    }
+}
+
+@mixin UserSelectNone() {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 }
 
 @mixin FixedGroups() {
@@ -55,6 +64,14 @@ $font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
             border-color: $blue;
         }
     }
+    &.yellow-yellow {
+        border: 1px solid $yellow;
+        background: $yellow; 
+        &.checked {
+            background: $yellow;
+            border-color: $yellow;
+        }
+    }
     &.green-red {
         border: 1px solid $red;
         background: $red; 
@@ -66,6 +83,14 @@ $font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
     &.green-blue {
         border: 1px solid $blue;
         background: $blue; 
+        &.checked {
+            background: $green;
+            border-color: $green;
+        }
+    }
+    &.green-yellow {
+        border: 1px solid $yellow;
+        background: $yellow; 
         &.checked {
             background: $green;
             border-color: $green;
@@ -87,6 +112,14 @@ $font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
             border-color: $red;
         }
     }
+    &.red-yellow {
+        border: 1px solid $yellow;
+        background: $yellow; 
+        &.checked {
+            background: $red;
+            border-color: $red;
+        }
+    }
     &.blue-green {
         border: 1px solid $green;
         background: $green; 
@@ -101,6 +134,38 @@ $font-family: "Lato","Helvetica Neue", Helvetica ,Arial ,sans-serif;
         &.checked {
             background: $blue;
             border-color: $blue;
+        }
+    }
+    &.blue-yellow {
+        border: 1px solid $yellow;
+        background: $yellow; 
+        &.checked {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+    &.yellow-green {
+        border: 1px solid $green;
+        background: $green; 
+        &.checked {
+            background: $yellow;
+            border-color: $yellow;
+        }
+    }
+    &.yellow-red {
+        border: 1px solid $red;
+        background: $red; 
+        &.checked {
+            background: $yellow;
+            border-color: $yellow;
+        }
+    }
+    &.yellow-blue {
+        border: 1px solid $blue;
+        background: $blue; 
+        &.checked {
+            background: $yellow;
+            border-color: $yellow;
         }
     }
 }

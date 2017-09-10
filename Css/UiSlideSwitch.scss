@@ -16,6 +16,7 @@
         transition: 0.3s ease-out all;
         -webkit-transition: 0.3s ease-out all;
         top: -1px;
+        @include UserSelectNone();
         &.checked {
             small {
                 left: 50px;

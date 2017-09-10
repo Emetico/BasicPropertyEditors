@@ -17,16 +17,13 @@
         touch-action: manipulation;
         cursor: pointer;
         -webkit-appearance: button;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
         outline: none;
         border: 1px solid #cccccc;
         background-color: #ffffff;
         color: #333333;
         min-width: 50px;
         float: left;
+        @include UserSelectNone();
         &.true {
             @include BorderRadius(10px, true, false, true, false);
         }
@@ -48,6 +45,11 @@
             &.blue {
                 border-color: $blueBorder;
                 background-color: $blue;
+                color: #ffffff;
+            }
+            &.yellow {
+                border-color: $yellowBorder;
+                background-color:  $yellow;
                 color: #ffffff;
             }
         }

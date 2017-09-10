@@ -1,107 +1,188 @@
 ﻿{
     propertyEditors:[
 	{
-      "alias": "BasicPropertyEditors.SlideSwitch",
-      "name": "Slide Switch",
-      "isParameterEditor": true,
-      "group": "Basic Property Editors",
-      "icon": "icon-trafic color-green",
-      "editor": {
-        "view": "~/App_Plugins/BasicPropertyEditors/PropertyEditors/SlideSwitch/SlideSwitch.html"
-      },
-      "prevalues": {
-        "fields": [
-			{
-				label: "Default value",
-				description: "Set the default value to be true or false 'checked or not checked'",
-				key: "defaultValue",
-				view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/Checkbox.html"
-			},
-			{
-				"label": "True color",
-				"description": "Set the color, when the checkbox is selected.",
-				"key": "trueColor",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
-			},
-			{
-				"label": "True text",
-				"description": "Set the text, when the checkbox is selected.",
-				"key": "trueText",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
-			},
-			{
-				"label": "False color",
-				"description": "Set the color, when the checkbox is not selected.",
-				"key": "falseColor",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
-			},
-			{
-				"label": "False text",
-				"description": "Set the Text, when the checkbox is not selected.",
-				"key": "falseText",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
-			}
-        ]
-      }
+		alias: "BasicPropertyEditors.SlideSwitch",
+		name: "Slide Switch",
+		isParameterEditor: true,
+		group: "Basic Property Editors",
+		icon: "icon-checkbox color-green",
+		editor: {
+		view: "~/App_Plugins/BasicPropertyEditors/PropertyEditors/SlideSwitch/SlideSwitch.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Default value",
+					description: "Set the default value to be true or false 'checked or not checked'",
+					key: "defaultValue",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/CheckedEmpty.html"
+				},
+				{
+					"label": "True color",
+					"description": "Set the color, when the checkbox is selected.",
+					"key": "trueColor",
+					"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
+				},
+				{
+					"label": "True text",
+					"description": "Set the text, when the checkbox is selected.",
+					"key": "trueText",
+					"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
+				},
+				{
+					"label": "False color",
+					"description": "Set the color, when the checkbox is not selected.",
+					"key": "falseColor",
+					"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
+				},
+				{
+					"label": "False text",
+					"description": "Set the Text, when the checkbox is not selected.",
+					"key": "falseText",
+					"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
+				}
+			]
+		},
+		defaultConfig: {
+			"defaultValue": "",
+			"trueColor": "green",
+			"trueText": "yes",
+			"falseColor": "red",
+			"falseText": "no"
+		}
     },
 	{
-      "alias": "BasicPropertyEditors.ButtonSwitch",
-      "name": "Button Switch",
-      "isParameterEditor": true,
-      "group": "Basic Property Editors",
-      "icon": "icon-trafic color-yellow",
-      "editor": {
-        "view": "~/App_Plugins/BasicPropertyEditors/PropertyEditors/ButtonSwitch/ButtonSwitch.html"
-      },
-      "prevalues": {
-        "fields": [
-			{
-				label: "Default value",
-				description: "Set the default value to be true or false 'checked or not checked'",
-				key: "defaultValue",
-				view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/Checkbox.html"
-			},
-			{
-				"label": "True color",
-				"description": "Set the color, when the checkbox is selected.",
-				"key": "trueColor",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
-			},
-			{
-				"label": "True text",
-				"description": "Set the text, when the checkbox is selected.",
-				"key": "trueText",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
-			},
-			{
-				"label": "False color",
-				"description": "Set the color, when the checkbox is not selected.",
-				"key": "falseColor",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
-			},
-			{
-				"label": "False text",
-				"description": "Set the Text, when the checkbox is not selected.",
-				"key": "falseText",
-				"view": "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
-			}
-        ]
-      }
+		alias: "BasicPropertyEditors.ButtonSwitch",
+		name: "Button Switch",
+		isParameterEditor: true,
+		group: "Basic Property Editors",
+		icon: "icon-checkbox color-yellow",
+		editor: {
+		view: "~/App_Plugins/BasicPropertyEditors/PropertyEditors/ButtonSwitch/ButtonSwitch.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Default value",
+					description: "Set the default value to be true or false 'checked or not checked'",
+					key: "defaultValue",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/CheckedEmpty.html"
+				},
+				{
+					label: "True color",
+					description: "Set the color, when the checkbox is selected.",
+					key: "trueColor",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
+				},
+				{
+					label: "True text",
+					description: "Set the text, when the checkbox is selected.",
+					key: "trueText",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
+				},
+				{
+					label: "False color",
+					description: "Set the color, when the checkbox is not selected.",
+					key: "falseColor",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.html"
+				},
+				{
+					label: "False text",
+					description: "Set the Text, when the checkbox is not selected.",
+					key: "falseText",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.html"
+				}
+			]
+		},
+		defaultConfig: {
+			"defaultValue": "",
+			"trueColor": "green",
+			"trueText": "yes",
+			"falseColor": "red",
+			"falseText": "no"
+		}
+    },
+	{
+		alias: "BasicPropertyEditors.TextboxMaxCharacters",
+		name: "Textbox Max Characters",
+		isParameterEditor: true,
+		group: "Basic Property Editors",
+		icon: "icon-autofill color-green",
+		editor: {
+		"view": "~/App_Plugins/BasicPropertyEditors/PropertyEditors/TextBoxMaxCharacters/TextBoxMaxCharacters.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Cut text",
+					description: "Cut text when reaching the max allowed characters?",
+					key: "cutText",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/YesNo.html"
+				},
+				{
+					label: "Max characters",
+					description: "Type in the max allowed characters in the textbox.",
+					key: "maxCharacters",
+					view: "number"
+				}
+			]
+		},
+		defaultConfig: {
+			"cutText": "true",
+			"maxCharacters": "150"
+		}
+    },
+	{
+		alias: "BasicPropertyEditors.TextareaMaxCharacters",
+		name: "Textarea Max Characters",
+		isParameterEditor: true,
+		group: "Basic Property Editors",
+		icon: "icon-autofill color-yellow",
+		editor: {
+		view: "~/App_Plugins/BasicPropertyEditors/PropertyEditors/TextareaMaxCharacters/TextareaMaxCharacters.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Cut text",
+					description: "Cut text when reaching the max allowed characters?",
+					key: "cutText",
+					view: "~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/YesNo.html"
+				},
+				{
+					label: "Max characters",
+					description: "Type in the max allowed characters in the textbox.",
+					key: "maxCharacters",
+					view: "number",				
+				}
+			]
+		},
+		defaultConfig: {
+			"cutText": "true",
+			"maxCharacters": "250"
+		}
     }
 	],
 	gridEditors:[],
 	javascript:[
+		"~/App_Plugins/BasicPropertyEditors/Factories/bpeHelperService.js",
 		"~/App_Plugins/BasicPropertyEditors/Directives/UiSlideSwitch/UiSlideSwitch.js",
 		"~/App_Plugins/BasicPropertyEditors/Directives/UiButtonSwitch/UiButtonSwitch.js",
+		"~/App_Plugins/BasicPropertyEditors/Directives/UiTextboxMaxchar/UiTextboxMaxchar.js",
+		"~/App_Plugins/BasicPropertyEditors/Directives/UiTextareaMaxchar/UiTextareaMaxchar.js",
 		"~/App_Plugins/BasicPropertyEditors/Prevalues/Color/Color.js",
 		"~/App_Plugins/BasicPropertyEditors/Prevalues/Text/Text.js",
-		"~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/Checkbox.js",
+		"~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/CheckedEmpty.js",
+		"~/App_Plugins/BasicPropertyEditors/Prevalues/Checkbox/YesNo.js",
 		"~/App_Plugins/BasicPropertyEditors/PropertyEditors/SlideSwitch/SlideSwitch.js",
-		"~/App_Plugins/BasicPropertyEditors/PropertyEditors/ButtonSwitch/ButtonSwitch.js"
+		"~/App_Plugins/BasicPropertyEditors/PropertyEditors/ButtonSwitch/ButtonSwitch.js",
+		"~/App_Plugins/BasicPropertyEditors/PropertyEditors/TextboxMaxCharacters/TextboxMaxCharacters.js",
+		"~/App_Plugins/BasicPropertyEditors/PropertyEditors/TextareaMaxCharacters/TextareaMaxCharacters.js"
 	],
 	css:[
 		"~/App_Plugins/BasicPropertyEditors/Css/UiSlideSwitch.min.css",
 		"~/App_Plugins/BasicPropertyEditors/Css/UiButtonSwitch.min.css",
+		"~/App_Plugins/BasicPropertyEditors/Css/UiMaxCharacters.min.css",
 		"~/App_Plugins/BasicPropertyEditors/Css/Prevalues.min.css"
 	]
 }

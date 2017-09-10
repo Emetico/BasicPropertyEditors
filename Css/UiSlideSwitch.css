@@ -12,7 +12,11 @@
   box-shadow: #dfdfdf 0px 0px 0px 0px inset;
   transition: 0.3s ease-out all;
   -webkit-transition: 0.3s ease-out all;
-  top: -1px; }
+  top: -1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .uiSlideSwitch .switch.checked small {
     left: 50px; }
   .uiSlideSwitch .switch.checked .switch-text .off {
@@ -37,6 +41,12 @@
     .uiSlideSwitch .switch.blue-blue.checked {
       background: #36b4f6;
       border-color: #36b4f6; }
+  .uiSlideSwitch .switch.yellow-yellow {
+    border: 1px solid #eaea11;
+    background: #eaea11; }
+    .uiSlideSwitch .switch.yellow-yellow.checked {
+      background: #eaea11;
+      border-color: #eaea11; }
   .uiSlideSwitch .switch.green-red {
     border: 1px solid #df3b3a;
     background: #df3b3a; }
@@ -47,6 +57,12 @@
     border: 1px solid #36b4f6;
     background: #36b4f6; }
     .uiSlideSwitch .switch.green-blue.checked {
+      background: #5cc25a;
+      border-color: #5cc25a; }
+  .uiSlideSwitch .switch.green-yellow {
+    border: 1px solid #eaea11;
+    background: #eaea11; }
+    .uiSlideSwitch .switch.green-yellow.checked {
       background: #5cc25a;
       border-color: #5cc25a; }
   .uiSlideSwitch .switch.red-green {
@@ -61,6 +77,12 @@
     .uiSlideSwitch .switch.red-blue.checked {
       background: #df3b3a;
       border-color: #df3b3a; }
+  .uiSlideSwitch .switch.red-yellow {
+    border: 1px solid #eaea11;
+    background: #eaea11; }
+    .uiSlideSwitch .switch.red-yellow.checked {
+      background: #df3b3a;
+      border-color: #df3b3a; }
   .uiSlideSwitch .switch.blue-green {
     border: 1px solid #5cc25a;
     background: #5cc25a; }
@@ -73,6 +95,30 @@
     .uiSlideSwitch .switch.blue-red.checked {
       background: #36b4f6;
       border-color: #36b4f6; }
+  .uiSlideSwitch .switch.blue-yellow {
+    border: 1px solid #eaea11;
+    background: #eaea11; }
+    .uiSlideSwitch .switch.blue-yellow.checked {
+      background: #36b4f6;
+      border-color: #36b4f6; }
+  .uiSlideSwitch .switch.yellow-green {
+    border: 1px solid #5cc25a;
+    background: #5cc25a; }
+    .uiSlideSwitch .switch.yellow-green.checked {
+      background: #eaea11;
+      border-color: #eaea11; }
+  .uiSlideSwitch .switch.yellow-red {
+    border: 1px solid #df3b3a;
+    background: #df3b3a; }
+    .uiSlideSwitch .switch.yellow-red.checked {
+      background: #eaea11;
+      border-color: #eaea11; }
+  .uiSlideSwitch .switch.yellow-blue {
+    border: 1px solid #36b4f6;
+    background: #36b4f6; }
+    .uiSlideSwitch .switch.yellow-blue.checked {
+      background: #eaea11;
+      border-color: #eaea11; }
   .uiSlideSwitch .switch small {
     background: #ffffff;
     border-radius: 100%;

@@ -1,0 +1,17 @@
+.uiMaxCharacters p {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 4px; }
+  .uiMaxCharacters p span {
+    padding: 2px 4px 1px 4px;
+    color: #ffffff; }
+    .uiMaxCharacters p span.green {
+      background-color: #5cc25a; }
+    .uiMaxCharacters p span.yellow {
+      background-color: #eaea11; }
+    .uiMaxCharacters p span.blue {
+      background-color: #36b4f6; }
+    .uiMaxCharacters p span.red {
+      background-color: #df3b3a; }
+
+/*# sourceMappingURL=UiMaxCharacters.css.map */

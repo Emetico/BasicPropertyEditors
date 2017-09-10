@@ -14,16 +14,16 @@
   touch-action: manipulation;
   cursor: pointer;
   -webkit-appearance: button;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   outline: none;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   color: #333333;
   min-width: 50px;
-  float: left; }
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .uiButtonSwitch button.true {
     -webkit-border-top-left-radius: 10px;
     -moz-border-radius-topleft: 10px;
@@ -51,6 +51,10 @@
     .uiButtonSwitch button.checked.blue {
       border-color: #2fa6e4;
       background-color: #36b4f6;
+      color: #ffffff; }
+    .uiButtonSwitch button.checked.yellow {
+      border-color: #e4e414;
+      background-color: #eaea11;
       color: #ffffff; }
 
 /*# sourceMappingURL=UiButtonSwitch.css.map */

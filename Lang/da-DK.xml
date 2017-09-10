@@ -11,5 +11,11 @@
     <key alias="red">Rød</key>
     <key alias="green">Grøn</key>
     <key alias="blue">Blå</key>
+    <key alias="yellow">Gul</key>
+  </area>
+  <area alias="bpe">
+    <key alias="charactersLeft">Tegn tilbage</key>
+    <key alias="caution">Advarsel</key>
+    <key alias="cautionErrorMsg">Du har overskredet de maksimalt tilladte tegn.</key>
   </area>
 </language>
